@@ -37,12 +37,6 @@ function validateLevel(report: number[]): boolean {
     const diff = report[i] - report[i + 1]
 
 
-// Soit Ce qui est faux c'est order pas bon
-// Soit ce qui est faux c'est diff pas bonne
-// Soit les deux
-// 4 2 4 5 6
-// 2 4 5 6 5
-// 2 4 4 5 6
     if (!order && diff !== 0 ) {
       order = diff > 0 ? 'desc' : 'asc'
     }

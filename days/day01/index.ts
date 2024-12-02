@@ -23,4 +23,13 @@ const total = leftIds.reduce<number>((acc: number, leftId: number, index: number
   return acc
 }, 0)
 
+let similarityScore =0
+
+for (const leftId of leftIds) {
+  const occurences = rightIds.filter(rightId => leftId === rightId).length
+  similarityScore = similarityScore + (occurences * leftId)
+}
+
+
+console.log({ similarityScore})
 console.log({ total })

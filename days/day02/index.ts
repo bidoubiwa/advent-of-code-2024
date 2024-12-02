@@ -19,7 +19,7 @@ for (const report of reports) {
   if (!validLevel) {
     for (let i = 0; i < report.length; i++) {
       const copyReport = [ ...report ]
-      copyReport.splice(i, 1)
+      copyReport.splice(i, 1) // no judgement
       validLevel = validateLevel(copyReport)
       if (validLevel) {
         break;

@@ -1,9 +1,5 @@
 import fs from 'fs'
 
-// 1, on va voir en haut en bas a droite a gauche
-// 2. on cree des arrays de toutes les possibilités
-// On cherche les X on part de la
-
 const input = fs.readFileSync('days/day04/input.txt', 'utf8')
 const lines = input.split('\n')
 lines.pop()

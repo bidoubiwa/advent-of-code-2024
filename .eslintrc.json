@@ -9,6 +9,8 @@
         "sourceType": "module"
     },
     "rules": {
-         "@typescript-eslint/require-array-sort-compare": "off"
+         "@typescript-eslint/require-array-sort-compare": "off",
+         "no-explicit-any": "off",
+          "@typescript-eslint/no-explicit-any": "off"
     }
 }
